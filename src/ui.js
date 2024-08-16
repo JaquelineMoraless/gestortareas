@@ -1,5 +1,5 @@
 //Importar la funcion para traer las tareas del  LocalStorage
-import { getTasks } from ":/task";
+import { getTasks } from "./task";
 
 //Funcion para visualizar las tareas
 export const renderTasks = () => {
@@ -22,4 +22,4 @@ export const renderTasks = () => {
 
         taskList.appendChild(li);
     });
-};  
+};
