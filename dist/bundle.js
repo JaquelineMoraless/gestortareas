@@ -109,11 +109,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap);"]);
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);"]);
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=New+Amsterdam&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* Estilos generales de todo el proyecto */
+___CSS_LOADER_EXPORT___.push([module.id, `
+/* Estilos generales de todo el proyecto */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ba93d2;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -125,10 +128,17 @@ body {
 /* Estilos para el contenedor principal*/
 
 #app {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
+    background-color: rgb(209, 147, 181);
+    width: 50%;
+    padding: 40px;
+    border-radius: 10px;
+    border: 5px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 20px;
+    text-align:center;
 
 }
  /*Estilos para el formulario*/
@@ -146,17 +156,25 @@ body {
     margin-right: 10px;
     border: 1px solid #ddd;
     border-radius: 3px; 
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 /*Estilos al boton*/
 
 button {
-    padding: 5px, 8px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 3px;
+    width: 25%;
+    padding: 1%;
+    background-color: #653178;
+    color: rgb(255, 255, 255);
+    border: 2px solid #363636;
+    border-radius: 5px solid #ffffff;
     cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: bold;
+
 }
 
 /*Estilos de la lista*/
@@ -164,18 +182,25 @@ button {
 ul{
     list-style: none;
     padding: 0;
+    
 }
 
 /*Estilos a los elementos de la lista*/
 
 li{
-    background-color: #f4f4f4;
+    background-color: rgb(209, 147, 181);
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 5px solid #ddd;
     margin-top: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+   
+    
 }
 
 /*Estilos para cuando una tarea este completada*/
@@ -202,7 +227,7 @@ li.completed{
 
 
 
-`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA,0CAA0C;AAC1C;IACI,8BAA8B;IAC9B,yBAAyB;IACzB,SAAS;IACT,UAAU;IACV,aAAa;IACb,aAAa;IACb,uBAAuB;IACvB;AACJ;;AAEA,wCAAwC;;AAExC;IACI,uBAAuB;IACvB,aAAa;IACb,kBAAkB;IAClB,uCAAuC;;AAE3C;CACC,6BAA6B;;CAE7B;IACG,aAAa;IACb,8BAA8B;CACjC;;CAEA,mBAAmB;;CAEnB;IACG,UAAU;IACV,YAAY;IACZ,kBAAkB;IAClB,sBAAsB;IACtB,kBAAkB;AACtB;;AAEA,mBAAmB;;AAEnB;IACI,iBAAiB;IACjB,yBAAyB;IACzB,YAAY;IACZ,YAAY;IACZ,kBAAkB;IAClB,eAAe;AACnB;;AAEA,sBAAsB;;AAEtB;IACI,gBAAgB;IAChB,UAAU;AACd;;AAEA,sCAAsC;;AAEtC;IACI,yBAAyB;IACzB,aAAa;IACb,sBAAsB;IACtB,gBAAgB;IAChB,aAAa;IACb,8BAA8B;IAC9B,mBAAmB;AACvB;;AAEA,gDAAgD;;AAEhD;IACI,6BAA6B;IAC7B;AACJ","sourcesContent":["/* Estilos generales de todo el proyecto */\r\nbody {\r\n    font-family: Arial, sans-serif;\r\n    background-color: #f4f4f4;\r\n    margin: 0;\r\n    padding: 0;\r\n    height: 100vh;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center\r\n}\r\n\r\n/* Estilos para el contenedor principal*/\r\n\r\n#app {\r\n    background-color: white;\r\n    padding: 20px;\r\n    border-radius: 5px;\r\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n\r\n}\r\n /*Estilos para el formulario*/\r\n\r\n form{\r\n    display: flex;\r\n    justify-content: space-between;\r\n }\r\n\r\n /*Estilos al input*/\r\n\r\n input {\r\n    width: 75%;\r\n    padding: 8px;\r\n    margin-right: 10px;\r\n    border: 1px solid #ddd;\r\n    border-radius: 3px; \r\n}\r\n\r\n/*Estilos al boton*/\r\n\r\nbutton {\r\n    padding: 5px, 8px;\r\n    background-color: #007bff;\r\n    color: white;\r\n    border: none;\r\n    border-radius: 3px;\r\n    cursor: pointer;\r\n}\r\n\r\n/*Estilos de la lista*/\r\n\r\nul{\r\n    list-style: none;\r\n    padding: 0;\r\n}\r\n\r\n/*Estilos a los elementos de la lista*/\r\n\r\nli{\r\n    background-color: #f4f4f4;\r\n    padding: 10px;\r\n    border: 1px solid #ddd;\r\n    margin-top: 10px;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n/*Estilos para cuando una tarea este completada*/\r\n\r\nli.completed{\r\n    text-decoration: line-through;\r\n    color: #888\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":";AAKA,0CAA0C;AAC1C;IACI,yBAAyB;IACzB,SAAS;IACT,UAAU;IACV,aAAa;IACb,aAAa;IACb,uBAAuB;IACvB;AACJ;;AAEA,wCAAwC;;AAExC;IACI,oCAAoC;IACpC,UAAU;IACV,aAAa;IACb,mBAAmB;IACnB,sBAAsB;IACtB,uCAAuC;IACvC,mCAAmC;EACrC,gBAAgB;EAChB,kBAAkB;IAChB,eAAe;IACf,iBAAiB;;AAErB;CACC,6BAA6B;;CAE7B;IACG,aAAa;IACb,8BAA8B;CACjC;;CAEA,mBAAmB;;CAEnB;IACG,UAAU;IACV,YAAY;IACZ,kBAAkB;IAClB,sBAAsB;IACtB,kBAAkB;IAClB,iCAAiC;EACnC,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA,mBAAmB;;AAEnB;IACI,UAAU;IACV,WAAW;IACX,yBAAyB;IACzB,yBAAyB;IACzB,yBAAyB;IACzB,gCAAgC;IAChC,eAAe;IACf,iCAAiC;EACnC,gBAAgB;EAChB,gBAAgB;;AAElB;;AAEA,sBAAsB;;AAEtB;IACI,gBAAgB;IAChB,UAAU;;AAEd;;AAEA,sCAAsC;;AAEtC;IACI,oCAAoC;IACpC,aAAa;IACb,sBAAsB;IACtB,gBAAgB;IAChB,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,0BAA0B;EAC5B,yBAAyB;EACzB,mBAAmB;EACnB,kBAAkB;;;AAGpB;;AAEA,gDAAgD;;AAEhD;IACI,6BAA6B;IAC7B;AACJ","sourcesContent":["\r\n@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=New+Amsterdam&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');\r\n\r\n/* Estilos generales de todo el proyecto */\r\nbody {\r\n    background-color: #ba93d2;\r\n    margin: 0;\r\n    padding: 0;\r\n    height: 100vh;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center\r\n}\r\n\r\n/* Estilos para el contenedor principal*/\r\n\r\n#app {\r\n    background-color: rgb(209, 147, 181);\r\n    width: 50%;\r\n    padding: 40px;\r\n    border-radius: 10px;\r\n    border: 5px solid #ddd;\r\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n    font-family: \"DM Serif Text\", serif;\r\n  font-weight: 400;\r\n  font-style: normal;\r\n    font-size: 20px;\r\n    text-align:center;\r\n\r\n}\r\n /*Estilos para el formulario*/\r\n\r\n form{\r\n    display: flex;\r\n    justify-content: space-between;\r\n }\r\n\r\n /*Estilos al input*/\r\n\r\n input {\r\n    width: 75%;\r\n    padding: 8px;\r\n    margin-right: 10px;\r\n    border: 1px solid #ddd;\r\n    border-radius: 3px; \r\n    font-family: \"Ubuntu\", sans-serif;\r\n  font-weight: 300;\r\n  font-style: normal;\r\n}\r\n\r\n/*Estilos al boton*/\r\n\r\nbutton {\r\n    width: 25%;\r\n    padding: 1%;\r\n    background-color: #653178;\r\n    color: rgb(255, 255, 255);\r\n    border: 2px solid #363636;\r\n    border-radius: 5px solid #ffffff;\r\n    cursor: pointer;\r\n    font-family: \"Ubuntu\", sans-serif;\r\n  font-weight: 300;\r\n  font-style: bold;\r\n\r\n}\r\n\r\n/*Estilos de la lista*/\r\n\r\nul{\r\n    list-style: none;\r\n    padding: 0;\r\n    \r\n}\r\n\r\n/*Estilos a los elementos de la lista*/\r\n\r\nli{\r\n    background-color: rgb(209, 147, 181);\r\n    padding: 10px;\r\n    border: 5px solid #ddd;\r\n    margin-top: 10px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    font-family: \"Lora\", serif;\r\n  font-optical-sizing: auto;\r\n  font-weight: weight;\r\n  font-style: normal;\r\n   \r\n    \r\n}\r\n\r\n/*Estilos para cuando una tarea este completada*/\r\n\r\nli.completed{\r\n    text-decoration: line-through;\r\n    color: #888\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

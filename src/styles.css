@@ -1,7 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=New+Amsterdam&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 /* Estilos generales de todo el proyecto */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ba93d2;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -13,10 +17,17 @@ body {
 /* Estilos para el contenedor principal*/
 
 #app {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
+    background-color: rgb(209, 147, 181);
+    width: 50%;
+    padding: 40px;
+    border-radius: 10px;
+    border: 5px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 20px;
+    text-align:center;
 
 }
  /*Estilos para el formulario*/
@@ -34,17 +45,25 @@ body {
     margin-right: 10px;
     border: 1px solid #ddd;
     border-radius: 3px; 
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 /*Estilos al boton*/
 
 button {
-    padding: 5px, 8px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 3px;
+    width: 25%;
+    padding: 1%;
+    background-color: #653178;
+    color: rgb(255, 255, 255);
+    border: 2px solid #363636;
+    border-radius: 5px solid #ffffff;
     cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: bold;
+
 }
 
 /*Estilos de la lista*/
@@ -52,18 +71,25 @@ button {
 ul{
     list-style: none;
     padding: 0;
+    
 }
 
 /*Estilos a los elementos de la lista*/
 
 li{
-    background-color: #f4f4f4;
+    background-color: rgb(209, 147, 181);
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 5px solid #ddd;
     margin-top: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+   
+    
 }
 
 /*Estilos para cuando una tarea este completada*/
